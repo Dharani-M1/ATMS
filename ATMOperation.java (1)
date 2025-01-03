@@ -9,7 +9,7 @@ public class ATMOperation {
         this.adminActions = new AdminActions();
         this.userActions = new UserActions();
 
-        // Initialize static fields in ATMSystem if needed
+        
         ATMSystem.getAdmins().add(new Admin("admin", 1234));
         ATMSystem.getAdmins().add(new Admin("admin1", 1234));
     }
