@@ -7,7 +7,7 @@ public class AdminActions {
         System.out.print("Enter new username: ");
         String username = sc.nextLine();
 
-        // Check if the user already exists
+        
         for (User user : ATMSystem.getUsers()) {
             if (user.getUsername().equals(username)) {
                 System.out.println("User already exists!");
@@ -17,8 +17,8 @@ public class AdminActions {
 
         System.out.print("Enter new password: ");
         String password = sc.nextLine();
-
-        // Add the new user to the system
+        
+        
         ATMSystem.getUsers().add(new User(username, password));
         System.out.println("User added successfully.");
     }
@@ -90,22 +90,6 @@ public void depositAtmBalance(Scanner sc, Admin admin) {
         System.out.println("Invalid amount entered.");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public void viewUserTransactions(Scanner sc) {
         System.out.print("Enter the username to view transactions: ");
         String username = sc.nextLine();
